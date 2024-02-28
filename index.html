@@ -23,13 +23,17 @@
             display: flex;
             justify-content: space-between;
             /*^ Joga o botão de login para a direita*/
+            align-items: center;
+            border-bottom: 1px solid #BABABA;
         }
 
         #menu {
             display: flex;
-            width: 55%;
+            width: 45%;
             justify-content: space-around;
             align-items: center;
+
+            margin-left: 5%;
         }
 
         #principal div a {
@@ -40,10 +44,26 @@
             font-family: 'Inter';
         }
 
+        #principal div a:hover {
+            color: #CCCCCC;
+        }
+
         #principal button {
             margin-right: 5%;
             background: #0C70F2;
+            border: 0px;
+
+            height: 40px;
+            width: 80px;
+
+            /*Fonte*/
+            font-family: 'Inter';
+            font-size: 20px;
+            font-weight: 600;
             color: white;
+
+            /*Sombra*/
+            box-shadow: 3px 2px 4px 0px #0C70F240;
         }
     </style>
 </head>
