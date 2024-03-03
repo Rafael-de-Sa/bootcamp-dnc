@@ -1,6 +1,14 @@
 /*Importar Fonte*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+:root {
+  --azul-dnc: #0c70f2;
+  --preto-dnc: #303030;
+  --cinza-hover: #c9c9c9;
+
+  --fonte-padrao: "Inter";
+}
+
 body {
   margin: 0px;
   /*Mergem externa*/
@@ -21,7 +29,7 @@ body {
   width: 100%;
   height: 100px;
   border: 1px solid black;
-  background-color: #303030;
+  background-color: var(--preto-dnc);
   display: flex;
   justify-content: space-between;
   /*^ Joga o botão de login para a direita*/
@@ -43,23 +51,23 @@ body {
   font-weight: 600;
   color: white;
   text-decoration: none;
-  font-family: "Inter";
+  font-family: var(--fonte-padrao);
 }
 
 #principal div a:hover {
-  color: #cccccc;
+  color: var(--cinza-hover);
 }
 
 #principal button {
   margin-right: 5%;
-  background: #0c70f2;
+  background: var(--azul-dnc);
   border: 0px;
 
   height: 40px;
   width: 80px;
 
   /*Fonte*/
-  font-family: "Inter";
+  font-family: var(--fonte-padrao);
   font-size: 20px;
   font-weight: 600;
   color: white;
@@ -68,4 +76,41 @@ body {
   box-shadow: 3px 2px 4px 0px #0c70f240;
 
   cursor: pointer;
+}
+
+/*Seção Principal do Site*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+header {
+  color: white;
+  font-family: var(--fonte-padrao);
+}
+
+header h1 {
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+
+header .invert {
+  background-color: black;
+  font-weight: bold;
+  padding: 5px;
 }
