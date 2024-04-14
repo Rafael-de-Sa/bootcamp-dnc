@@ -5,14 +5,13 @@
   --azul-dnc: #0c70f2;
   --preto-dnc: #303030;
   --cinza-hover: #c9c9c9;
-
   --fonte-padrao: "Inter";
 }
 
 body {
-  margin: 0px;
+  margin: 0;
   /*Mergem externa*/
-  padding: 0px;
+  padding: 0;
   /*Margem Interna*/
 
   background: linear-gradient(
@@ -42,7 +41,6 @@ body {
   width: 45%;
   justify-content: space-around;
   align-items: center;
-
   margin-left: 5%;
 }
 
@@ -62,7 +60,6 @@ body {
   margin-right: 5%;
   background: var(--azul-dnc);
   border: 0px;
-
   height: 40px;
   width: 80px;
 
@@ -74,7 +71,6 @@ body {
 
   /*Sombra*/
   box-shadow: 3px 2px 4px 0px #0c70f240;
-
   cursor: pointer;
 }
 
@@ -239,4 +235,71 @@ footer .endereco {
   color: white;
   text-align: center;
   width: 20%;
+}
+footer .linha2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  height: 35px;
+  margin: 0px;
+}
+
+footer .linha2 a {
+  font-family: var(--fonte-padrao);
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+footer .linha2 a:first-child {
+  border-right: 3px solid white;
+}
+
+footer .linha2 a:hover {
+  color: var(--cinza-hover);
+}
+
+@media only screen and (max-width: 600px) {
+  /* Menu */
+  #principal {
+    flex-direction: column;
+    height: auto;
+  }
+  #menu {
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+  }
+  #menu a {
+    height: 50px;
+    align-items: center;
+    height: 50px;
+  }
+
+  #principal button {
+    width: 100%;
+    margin: 0px;
+  }
+
+  /* Section */
+  section h1 {
+    font-size: 38px;
+  }
+
+  section h2 {
+    font-size: 28px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  form {
+    width: 95%;
+    font-size: 20px;
+  }
+
+  .checkbox-itens label {
+    font-size: 17px;
+  }
 }
