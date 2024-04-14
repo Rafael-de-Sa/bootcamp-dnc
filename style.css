@@ -267,13 +267,14 @@ footer .linha2 a:hover {
     flex-direction: column;
     height: auto;
   }
+
   #menu {
     flex-direction: column;
     width: 100%;
-    padding: 0px;
+    margin: 0px;
   }
   #menu a {
-    height: 50px;
+    display: flex;
     align-items: center;
     height: 50px;
   }
